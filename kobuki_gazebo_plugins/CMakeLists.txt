@@ -40,6 +40,7 @@ add_dependencies(gazebo_ros_kobuki ${catkin_EXPORTED_TARGETS})
 target_link_libraries(gazebo_ros_kobuki
                       ${catkin_LIBRARIES}
                       ${GAZEBO_LIBRARIES})
+	      message("Gazebo libraries: ${GAZEBO_LIBRARIES}")	      
 
 install(TARGETS gazebo_ros_kobuki
         DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION})
